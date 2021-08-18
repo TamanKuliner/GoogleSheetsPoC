@@ -42,7 +42,7 @@ func configService() *sheets.Service {
 func main() {
 
 	spreadsheetId := "176FYD8uB5-S7SAXEAf4XWETk0oXJvGGJgeJnbz9WL3g"
-	readRange := "A2:A4"
+	readRange := "A2:C4"
 	resp, err := configService().Spreadsheets.Values.Get(spreadsheetId, readRange).Do()
 
 	if err != nil {
